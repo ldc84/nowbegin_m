@@ -700,7 +700,10 @@ body.over-hidden {
 
 .form-input {
   position: relative;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999em; }
   .form-input input[type=text],
   .form-input input[type=password],
   .form-input input[type=email],
