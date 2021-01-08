@@ -18,27 +18,46 @@ function layerOpen(page, size){
   // header
   $(function(){
     var header = $('#header');
-    var searchBtn = header.find('.search button');
-    var mypageBtn = header.find('.mypage a');
-    var alrimBtn = header.find('.alert a');
+    var menuBtn = header.find('.top-menu > a');
+    var searchBtn = header.find('.top-search > button');
+    var gnbMenu = $('.gnb-menu');
+    var topLoginBtn = gnbMenu.find('.top-login a');
+    var alrimBtn = gnbMenu.find('.alert a');
+    var gnbMenu = $('.gnb-menu');
+    var searchBox = $('.top-search-in');
+    var searchBoxBack = searchBox.find('.back');
+    var dim = $('#wrap > .dim');
 
-    // search open
-    searchBtn.on('click', function(){
-      var searchLi = $(this).closest('li.search');
-      if(!searchLi.hasClass('active')){
-        searchLi.addClass('active');
-        return false;
-      }
+    // top menu
+    menuBtn.on('click', function(){
+      body.addClass('over-hidden');
+      gnbMenu.addClass('active');
+      return false;
     });
 
-    // mypageBtn _ 로그인 안되어있을 경우
-    // 로그인 팝업 오픈
-    mypageBtn.on('click', function(){
-      if(!loginState){
-        layerOpen('../html/pop_login.html');
-        return false;
-      }
+    dim.on('click', function(){
+      body.removeClass('over-hidden');
+      gnbMenu.removeClass('active');
+      return false;
+    });
 
+    // search
+    searchBtn.on('click', function(){
+      body.addClass('over-hidden');
+      searchBox.addClass('active');
+      return false;
+    });
+
+    searchBoxBack.on('click', function(){
+      body.removeClass('over-hidden');
+      searchBox.removeClass('active');
+      return false;
+    });
+
+    // 로그인 팝업 오픈
+    topLoginBtn.on('click', function(){
+      layerOpen('../html/pop_login.html');
+      return false;
     });
 
     // 로그인 _ 회원가입 / 아이디찾기/ 비번찾기
@@ -84,24 +103,16 @@ function layerOpen(page, size){
       return false;
     });
 
-    // ese key event
-    $(document).keyup(function(e) {
-      if (e.keyCode == 27) {
-        if($('.layer').hasClass('show')){
-          $('.layer .close').trigger('click');
-        }else if($('.top-utill li.search').hasClass('active')){
-          $('.top-utill li.search').removeClass('active')
-        }
-      }
-    });
-
     // layer close
-    $(document).on('click', '.layer .close, .layer .dim, .layer-close', function(){
-      layer.removeClass('show');
-      body.removeClass('over-hidden');
-      layerWrap.empty();
-      layerWrap.attr('class', 'layer-wrap')
-      // layerWrap.removeClass('move layer-sm layer-alrim');
+    $(document).on('click', '.layer .close, .layer-close', function(){
+      layerWrap.removeClass('move');
+      layerWrap.on('transitionend', function(){
+        if(!layerWrap.hasClass('move')){
+          layer.removeClass('show');
+          layerWrap.empty();
+          layerWrap.attr('class', 'layer-wrap')
+        }
+      });
       return false;
     });
   });
@@ -172,12 +183,11 @@ function layerOpen(page, size){
       // live list
       $('.live-list').slick({
         infinite: false,
-        arrows: true,
+        arrows: false,
         speed: 300,
-        slidesToShow: 3,
+        slidesToShow: 1.5,
         slidesToScroll: 1,
-        centerPadding: '12px',
-        appendArrows: $('.main-live .arrow-box'),
+        centerPadding: '6px',
       });
 
       // main class
@@ -185,12 +195,11 @@ function layerOpen(page, size){
         var $this = $(this);
         $this.find('.class-list').slick({
           infinite: false,
-          arrows: true,
+          arrows: false,
           speed: 300,
-          slidesToShow: 4,
+          slidesToShow: 2,
           slidesToScroll: 1,
-          centerPadding: '28px',
-          appendArrows: $this.find('.arrow-box'),
+          centerPadding: '6px',
         });
       });
     }

@@ -1,7 +1,7 @@
 
 // box
 .btn-box-1 {
-  margin-top:40px;
+  margin-top:25px;
   * {
     vertical-align: middle;
   }
@@ -55,10 +55,10 @@ input[type='submit'] {
   text-align: center;
   font-family: inherit;
   padding: 0 65px;
-  height: 57px;
-  line-height: 55px;
+  height: 36px;
+  line-height: 34px;
   color: $color-text;
-  font-size: rem(18);
+  font-size: rem(12);
   text-align: center;
   transition: all ease-in-out 300ms;
   outline: none;
@@ -107,8 +107,8 @@ input[type='submit'] {
   }
 
   &.small {
-    padding:0 30px;
-    font-size:rem(15);
+    padding:0 16px;
+    font-size:rem(11);
   }
   &.small-2 {
     height:48px;
