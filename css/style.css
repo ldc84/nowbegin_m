@@ -739,7 +739,7 @@ body.over-hidden {
   .form-input > button {
     position: absolute;
     top: 0;
-    right: 0;
+    right: -1px;
     bottom: 0; }
   .form-input.btn input {
     padding-right: 120px; }
