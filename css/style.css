@@ -1456,7 +1456,8 @@ input[type='submit'] {
 .calendar .calendar-table table {
   width: 100%;
   border: 1px solid #d7d7d7;
-  text-align: center; }
+  text-align: center;
+  table-layout: fixed; }
   .calendar .calendar-table table th {
     height: 15px;
     color: #000;
