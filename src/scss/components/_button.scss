@@ -21,20 +21,21 @@
       }
     }
   }
-  &.type-1 {
-    padding-left:162px;
-  }
 }
 
 .btn-box-2 {
   padding:35px 16px 30px 16px;
 }
 .btn-box-3 {
-  margin-top:20px;
+  margin-bottom:15px;
   text-align:right;
   &.mt-1 {
     margin-top:35px;
   }
+}
+.btn-box-4 {
+  margin-bottom:15px;
+  text-align:center;
 }
 
 // button
@@ -82,7 +83,7 @@ input[type='submit'] {
   }
   &.color-4 {
     color:#000;
-    border:2px solid #000;
+    border:1px solid #000;
   }
   &.color-5 {
     color:#fff;
@@ -101,9 +102,9 @@ input[type='submit'] {
 
   // size
   &.medium {
-    height:51px;
-    line-height:49px;
-    padding:0 80px;
+    height:28px;
+    line-height:26px;
+    padding:0 44px;
   }
 
   &.small {
@@ -111,43 +112,37 @@ input[type='submit'] {
     font-size:rem(11);
   }
   &.small-2 {
-    height:48px;
-    line-height:46px;
-    padding:0 40px;
-    font-size:rem(17);
+    height:36px;
+    line-height:34px;
+    padding:0 74px;
+    font-size:rem(12);
     font-weight:500;
   }
   &.small-3 {
-    width:111px;
-    height:48px;
-    line-height:46px;
+    width:93px;
+    height:28px;
+    line-height:26px;
     padding:0;
-    font-size:rem(15);
+    font-size:rem(11);
     font-weight:500;
   }
   &.xsmall {
-    height:31px;
-    line-height:29px;
-    padding:0 36px;
-    font-size:rem(14);
+    height:16px;
+    line-height:14px;
+    padding:0 18px;
+    font-size:rem(10);
   }
   &.xsmall-2 {
-    height:29px;
-    line-height:27px;
-    padding:0 23px;
-    font-size:rem(13);
-    &.color-4 {
-      border-width:1px;
-    }
+    height:20px;
+    line-height:18px;
+    padding:0 15px;
+    font-size:rem(10);
   }
   &.xsmall-3 {
-    height:37px;
-    line-height:35px;
-    padding:0 16px;
-    font-size:rem(15);
-    &.color-4 {
-      border-width:1px;
-    }
+    height:22px;
+    line-height:20px;
+    padding:0 9px;
+    font-size:rem(10);
   }
 
   // display
@@ -160,7 +155,7 @@ input[type='submit'] {
 
 // btn-more
 .btn-more {
-  margin-top:40px;
+  margin-top:30px;
   text-align:center;
   > a {
     display:inline-block;

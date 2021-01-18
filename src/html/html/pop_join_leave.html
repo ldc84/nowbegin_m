@@ -1,4 +1,5 @@
-<h2>
+<h2>회원탈퇴</h2>
+<h2 class="mt-2">
   회원 탈퇴 신청에 앞서<br>
   아래의 사항을 반드시 확인해주세요.
 </h2>
@@ -8,7 +9,7 @@
     회원 정보와 남은 이용권 기간의 복원은 불가능합니다.
   </p>
   <h3 class="title-type-3">쿠폰 유효기간 확인</h3>
-  <div class="tb-data-5">
+  <div class="tb-data-4">
     <table>
       <caption>쿠폰 유효기간 확인 표</caption>
       <colgroup>
@@ -30,7 +31,7 @@
     </table>
   </div>
   <h3 class="title-type-3">잔여 포인트 확인</h3>
-  <div class="tb-data-5">
+  <div class="tb-data-4">
     <table>
       <caption>잔여 포인트 확인 표</caption>
       <colgroup>
@@ -59,7 +60,7 @@
     <a href="" class="button block color-1 btn-pop-leave">탈퇴하기</a>
   </div>
 </div>
-<a href="" class="close">레이어 닫기</a>
+<a href="" class="close"><img src="../images/common/layer_back.png" alt="닫기"></a>
 
 <script>
   // 필수체크 후 입력폼 이동
@@ -73,6 +74,9 @@
         alert('약관에 동의해야 탈퇴가 가능합니다.');
       }
       return false;
+    });
+    $('.layer .close').on('click', function(){
+      $('body').removeClass('over-hidden');
     });
   });
 </script>

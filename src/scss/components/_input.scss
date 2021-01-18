@@ -13,8 +13,9 @@
   }
   &.type-2 {
     > div {
-      & + div {
-        margin-left:12px;
+      width:30%;
+      &:first-child {
+        width:70%;
       }
     }
   }
@@ -25,10 +26,12 @@
 .form-input {
   position:relative;
   margin-bottom:10px;
+  @include fontNone;
   input[type=text],
   input[type=password],
   input[type=email],
   input[type=tel],
+  input[type=number],
   textarea {
     width:100%;
     height:36px;
@@ -37,6 +40,8 @@
     font-size:rem(11);
     font-weight:500;
     border:1px solid #cacaca;
+    border-radius: 0;
+    appearance: none;
     &[readonly] {
       background-color:#f1f1f1;
     }
@@ -44,6 +49,7 @@
 
 
   textarea {
+    height:147px;
     padding-top:10px;
     padding-bottom:10px;
     font-family: $font-main;
@@ -51,16 +57,21 @@
 
   > select {
     width:100%;
-    color:#9a9a9a;
+    height:36px;
+    padding:0 10px 0 18px;
+    font-size:rem(11);
+    font-weight:500;
     border:1px solid #cacaca;
     background:url("../images/icon/icon_arrow02.png") no-repeat 92% center;
+    background-size:6px auto;
     appearance:none;
+    border-radius: 0;
   }
 
   > button {
     position:absolute;
     top:0;
-    right:0;
+    right:-1px;
     bottom:0;
   }
 
@@ -86,23 +97,25 @@
     input[type=password],
     input[type=email],
     input[type=tel],
+    input[type=number],
     textarea {
-      height:48px;
-      padding:0 10px 0 22px;
+      height:28px;
+      padding:0 10px 0 12px;
       color:#9a9a9a;
-      font-size:rem(16);
+      font-size:rem(12);
       font-weight:400;
     }
     textarea {
-      height:150px;
+      height:83px;
       padding-top:10px;
       padding-bottom:10px;
-      padding-left:22px;
+      padding-left:12px;
     }
     select {
-      height:48px;
-      padding:0 35px 0 16px;
-      font-size:rem(16);
+      height:28px;
+      padding:0 30px 0 8px;
+      font-size:rem(12);
+      background-size:6px auto;
     }
   }
 
@@ -168,13 +181,14 @@
   }
   label {
     display:inline-block;
-    height:27px;
-    line-height:27px;
-    padding:0 0 0 44px;
+    height:16px;
+    line-height:16px;
+    padding:0 0 0 27px;
     color:#000;
-    font-size:rem(16);
+    font-size:rem(10);
     font-weight:500;
     background:url("../images/common/form_radio_off.png") no-repeat 0 center;
+    background-size:16px auto;
   }
   input[type=radio]:checked + label {
     background-image:url("../images/common/form_radio_on.png");
@@ -185,12 +199,13 @@
 .selectbox-1 {
   display:inline-block;
   select {
-    width:154px;
-    height:31px;
+    width:108px;
+    height:25px;
     padding:0 30px 0 18px;
     color:#000;
-    font-size:rem(13);
-    background:url("../images/icon/icon_select_arrow01.png") no-repeat 95% center;
+    font-size:rem(10);
+    background:url("../images/icon/icon_select_arrow01.png") no-repeat 92% center;
+    background-size:auto 4px;
     border:1px solid #ccc;
     appearance:none;
   }

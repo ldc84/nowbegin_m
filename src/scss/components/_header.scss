@@ -158,6 +158,42 @@
     }
   }
 
+  // mypage
+  &.mypage {
+    left:-100%;
+    width:100%;
+    .back {
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      width:46px;
+      height:45px;
+      img {
+        transform: scale(.5);
+      }
+    }
+    .user-name {
+      display:flex;
+      align-items: center;
+      padding:7px 0 18px 14px;
+      .image {
+        width:46px;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+          width:100%;
+        }
+      }
+      .name {
+        margin-left:14px;
+        color:#fff;
+        font-size:rem(12);
+        font-weight:500;
+      }
+    }
+  }
+
+  // active
   &.active {
     left:0;
   }

@@ -19,15 +19,7 @@
   <meta property="og:url" content="">
 
   <link rel="icon" type="image/png" href="../favicon.ico">
-  <link rel="stylesheet" href="../css/style.css?t=1610013340703">
-
-  <script>
-    // 로그인 체크 변수
-    var loginState = false;
-
-    // 알림 유무 변수
-    var alrim = true;
-  </script>
+  <link rel="stylesheet" href="../css/style.css?t=1610702011521">
 
 </head>
 
@@ -56,51 +48,36 @@
     <!-- //header -->
 
     <!-- gnb-menu -->
-    <aside class="gnb-menu">
-      <p class="logo"><img src="../images/common/logo.png" alt="NOW BEGIN"></p>
-      <!-- 로그인전 -->
-      <div class="top-login">
-        <a href="">로그인 하세요</a>
+    <aside class="gnb-menu mypage">
+      <a href="" class="back"><img src="../images/common/top_ico_back.png" alt="이전 화면으로 이동"></a>
+      <div class="user-name">
+        <p class="image">
+          <img src="../images/tmp/@tmp_121_121.png" alt="">
+        </p>
+        <p class="name">홍길동 님</p>
       </div>
-      <!-- 로그인시 -->
-      <ul class="top-utill" style="display:none;">
-        <li class="alert">
-          <a href="">
-            <img src="../images/common/top_ico_alert.png" alt="알림">
-            <span class="num">9+</span>
-          </a>
-        </li>
-        <li class="mypage">
-          <a href="">
-            <img src="../images/common/top_ico_mypage.png" alt="마이페이지">
-          </a>
-        </li>
-      </ul> 
       <nav id="gnb">
         <ul>
           <li>
-            <a href="">Dance</a>
+            <a href="">개인정보 수정</a>
           </li>
           <li>
-            <a href="">Fitness</a>
+            <a href="">수강 중의 강의</a>
           </li>
           <li>
-            <a href="">Pilates</a>
+            <a href="">내 쿠폰</a>
           </li>
           <li>
-            <a href="">Yoga</a>
+            <a href="">찜한강의</a>
           </li>
           <li>
-            <a href="">Zumba</a>
+            <a href="">결제 내역</a>
           </li>
           <li>
-            <a href="">Pole Dance</a>
+            <a href="">1:1문의</a>
           </li>
           <li>
-            <a href="">Meditation</a>
-          </li>
-          <li>
-            <a href="">Event</a>
+            <a href="">회원탈퇴</a>
           </li>
         </ul>
       </nav>
@@ -155,132 +132,71 @@
 <!-- start contents -->
 <div class="contents-box">
   
-  <h2 class="title-type-2">MYPAGE</h2>
+  <h2 class="title-type-2">개인정보수정</h2>
 
-  <!-- mypage-wrap -->
-  <div class="mypage-wrap">
-    <!-- mypage-lnb -->
-    <div class="mypage-lnb">
-      <div class="user">
-        <div class="image"><img src="../images/tmp/@tmp_121_121.png" alt=""></div>
-        <p class="greeting">
-          <span>홍길동</span>님, 안녕하세요
-        </p>
-        <p class="date">
-          만료일
-          <strong>2020.08.10</strong>
-        </p>
+  <!-- contents-inner -->
+  <div class="contents-inner">
+    <form action="">
+      <div class="user-modify-write">
+        <div>
+          <div class="form-input size-sm">
+            <input type="text" value="NOWBEGIN" readonly>
+          </div>
+        </div>
+        <div>
+          <div class="form-input size-sm">
+            <input type="password" placeholder="기존 비밀번호">
+          </div>
+        </div>
+        <div>
+          <div class="form-input size-sm">
+            <input type="password" placeholder="신규비밀번호">
+          </div>
+        </div>
+        <div>
+          <div class="form-input size-sm">
+            <input type="password" placeholder="신규비밀번호확인">
+          </div>
+        </div>
+        <div class="text-1">
+          비밀번호는 영문/숫자/특수문자 조합으로  8자리 이상으로 생성해주세요.
+        </div>
+        <div>
+          <div class="form-input-group type-2">
+            <div class="form-input size-sm">
+              <input type="tel" placeholder="휴대폰번호">
+            </div>
+            <div>
+              <button type="button" class="button block small-3 color-2">번호인증</button><!-- 번호인증시 .. '재전송' 으로 택스트 변경 -->
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="text-none"></p>
+          <div class="form-input-group type-2">
+            <div class="form-input size-sm">
+              <input type="number" placeholder="인증번호를 입력해주세요">
+            </div>
+            <div>
+              <button type="button" class="button block small-3 color-2">확인</button>
+            </div>
+          </div>
+        </div>
+        <div class="email">
+          <div class="form-input size-sm">
+            <input type="email" placeholder="이메일을 입력해주세요">
+          </div>
+        </div>
       </div>
-      <ul class="list">
-        <li>
-          <a href="./mypage_user_modify.html" class="active">개인정보 수정</a>
-        </li>
-        <li>
-          <a href="./mypage_lecture.html">수강 중인 강의</a>
-        </li>
-        <li>
-          <a href="./mypage_coupon.html">내 쿠폰</a>
-        </li>
-        <li>
-          <a href="./mypage_favorite.html">찜한 강의</a>
-        </li>
-        <li>
-          <a href="./mypage_payment.html">결제 내역</a>
-        </li>
-        <li>
-          <a href="./mypage_1vs1_list.html">1:1문의</a>
-        </li>
-        <li>
-          <a href="" class="btn-leave">회원탈퇴</a>
-        </li>
-      </ul>
-    </div>
-    <!-- //mypage-lnb -->
-
-    <!-- mypage-contents -->
-    <div class="mypage-contents">
-      <h3 class="title-type-3">개인정보수정</h3>
-      <form action="">
-        <div class="user-modify-write">
-          <div>
-            <label for="pu-id">아이디</label>
-            <div class="form-input size-sm" style="width:295px;">
-              <input type="text" id="pu-id" value="NOWBEGIN" readonly>
-            </div>
-          </div>
-          <div>
-            <label for="pu-pw">기존비밀번호</label>
-            <div class="form-input size-sm" style="width:295px;">
-              <input type="password" id="pu-pw">
-            </div>
-          </div>
-          <div>
-            <label for="pu-pwNew">신규비밀번호</label>
-            <div class="form-input size-sm" style="width:295px;">
-              <input type="password" id="pu-pwNew">
-            </div>
-          </div>
-          <div>
-            <label for="pu-pwNewRe">신규비밀번호확인</label>
-            <div class="form-input size-sm" style="width:295px;">
-              <input type="password" id="pu-pwNewRe">
-            </div>
-          </div>
-          <div class="text-1">
-            비밀번호는 영문/숫자/특수문자 조합으로  8자리 이상으로 생성해주세요.
-          </div>
-          <div>
-            <label for="pu-phone">휴대폰번호</label>
-            <div class="form-input-group type-2">
-              <div class="form-input size-sm" style="width:295px;">
-                <input type="text" id="pu-phone">
-              </div>
-              <div>
-                <button type="button" class="button small-3 color-2">번호인증</button><!-- 번호인증시 .. '재전송' 으로 택스트 변경 -->
-              </div>
-            </div>
-          </div>
-          <div>
-            <p class="text-none"></p>
-            <div class="form-input-group type-2">
-              <div class="form-input size-sm" style="width:295px;">
-                <input type="text" id="pu-confirmNum">
-              </div>
-              <div>
-                <button type="button" class="button small-3 color-2">확인</button>
-              </div>
-            </div>
-          </div>
-          <div class="email">
-            <label for="pu-email">이메일</label>
-            <div class="form-input-group">
-              <div class="form-input size-sm" style="width:166px;">
-                <input type="text" id="pu-email">
-              </div>
-              <span>@</span>
-              <div class="form-input size-sm" style="width:166px;">
-                <input type="text" id="pu-email">
-              </div>
-              <div class="form-input size-sm" style="width:154px;">
-                <select>
-                  <option value="">직접입력</option>
-                </select>
-              </div>
-            </div>
-          </div>
+      <div class="btn-box-1 type-1">
+        <div class="two">
+          <button type="button" class="button color-5">개인정보수정</button>
+          <button type="button" class="button color-4 btn-leave">회원탈퇴</button>
         </div>
-        <div class="btn-box-1 type-1">
-          <div class="two" style="width:516px;">
-            <button type="button" class="button color-5">개인정보수정</button>
-            <button type="button" class="button color-4 btn-leave">회원탈퇴</button>
-          </div>
-        </div>
-      </form>
-    </div>
-    <!-- //mypage-contents -->
-
+      </div>
+    </form>
   </div>
-  <!-- //mypage-wrap -->
+  <!-- //contents-inner -->
     
 </div>
 
@@ -334,7 +250,7 @@
   <!-- //wrap -->
 
   <!-- jquery cdn -->
-  <script src="../js/ui_js.js?t=1610013340703"></script>
+  <script src="../js/ui_js.js?t=1610702011521"></script>
 </body>
 
 </html>

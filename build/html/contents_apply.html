@@ -19,7 +19,7 @@
   <meta property="og:url" content="">
 
   <link rel="icon" type="image/png" href="../favicon.ico">
-  <link rel="stylesheet" href="../css/style.css?t=1610013340522">
+  <link rel="stylesheet" href="../css/style.css?t=1610702011406">
 
   <script>
     // 로그인 체크 변수
@@ -165,30 +165,24 @@
     <div class="apply-box-1">
       
       <div>
-        <h3 class="title-type-3 mt-1">신청내역</h3>
+        <h3 class="title-type-3">신청내역</h3>
         <div class="tb-data-1">
           <table>
             <caption>신청내역 표</caption>
             <colgroup>
-              <col width="30%">
+              <col width="32%">
               <col width="*">
-              <col width="15%">
-              <col width="15%">
             </colgroup>
             <thead>
               <tr>
                 <th scope="col">클래스</th>
                 <th scope="col">수강일정</th>
-                <th scope="col">판매금액</th>
-                <th scope="col">할인금액</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>VIVIA 걸스 힙합</td>
                 <td>2020.11.17 ~ 2020.12.17 (주 2회/ 총 10회)</td>
-                <td>120,000</td>
-                <td><strong class="point-1">100,000</strong></td>
               </tr>
             </tbody>
           </table>
@@ -199,8 +193,8 @@
             <caption>할인정보 표</caption>
             <colgroup>
               <col width="*">
-              <col width="40%">
-              <col width="40%">
+              <col width="35%">
+              <col width="35%">
             </colgroup>
             <tbody>
               <tr>
@@ -336,13 +330,34 @@
       // coupon popup
       var couponBtn = $('.btn-coupon');
       couponBtn.on('click', function(){
-        layerOpen('./pop_coupon_list.html', 'layer-lg');
+        var layer = $('.layer');
+        var layerWrap = $('.layer-wrap');
+
+        layer.before('<div class="dim-2"></div>');
+        layerOpen('./pop_coupon_list.html', 'layer-sm');
+        
+        $(document).on('click', '.layer .close-2', function(){
+          $('.dim-2').remove();
+          layerWrap.removeClass('move');
+          layerWrap.on('transitionend', function(){
+            if(!layerWrap.hasClass('move')){
+              $('body').removeClass('over-hidden');
+              layer.removeClass('show');
+              layerWrap.empty();
+              layerWrap.attr('class', 'layer-wrap')
+            }
+          });
+          return false;
+        });
         return false;
       });
 
+      
+
       // 완료 팝업
       function paySuccess(){
-        layerOpen('./pop_payment.html', 'layer-sm');
+        $('.layer').before('<div class="dim-2"></div>');
+        layerOpen('./pop_payment.html', 'layer-xsm');
       }
       $('.btn-pay').on('click', function(){
         paySuccess();
@@ -350,6 +365,8 @@
       });
       // 완료 팝업 확인시
       $(document).on('click', '.payment-wrap .layer-close', function(){
+        $('.dim-2').remove();
+        $('body').removeClass('over-hidden');
         console.log('확인 버튼 클릭');
         return false;
       });
@@ -410,7 +427,7 @@
   <!-- //wrap -->
 
   <!-- jquery cdn -->
-  <script src="../js/ui_js.js?t=1610013340522"></script>
+  <script src="../js/ui_js.js?t=1610702011406"></script>
 </body>
 
 </html>

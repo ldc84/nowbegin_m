@@ -20,17 +20,17 @@
       font-weight:700;
       &.layer-tit-1 {
         position:relative;
-        margin-bottom:12px;
-        padding-bottom:15px;
+        margin-bottom:10px;
+        padding-bottom:10px;
         color:#2e2e2e;
-        font-size:rem(19);
+        font-size:rem(12);
         &:after {
           content:'';
           display:block;
           position:absolute;
           bottom:0;
           left:50%;
-          width:23px;
+          width:15px;
           height:1px;
           background-color:#bcbcbc;
           transform: translateX(-50%);
@@ -57,6 +57,16 @@
       img {
         transform: scale(.5);
       }
+    }
+    .close-2 {
+      position:absolute;
+      top:0;
+      right:0;
+      width:35px;
+      height:35px;
+      background:url("../images/common/layer_close.png") no-repeat center center;
+      background-size:8px auto;
+      @include fontNone;
     }
 
     .layer-contents {
@@ -260,22 +270,15 @@
 
     // join _ leave
     .join-leave {
-      width:484px;
       .title-type-3 {
-        margin:50px 0 15px 0;
-        text-align:left;
+        margin:30px 0 12px 0;
       }
       .checkbox {
-        margin-top:50px;
+        margin-top:35px;
         label {
-          font-size:rem(16);
+          font-size:rem(10);
           font-weight:500;
         }
-      }
-      .btn-box-1 {
-        width:440px;
-        margin-left:auto;
-        margin-right:auto;
       }
     }
 
@@ -355,31 +358,33 @@
         flex-flow: column;
         justify-content: center;
         align-items: center;
-        width:242px;
-        height:122px;
-        margin:0 auto 25px auto;
-        padding:0 65px 0 0;
+        width:153px;
+        height:77px;
+        margin:0 auto 18px auto;
+        padding:0 36px 0 0;
         line-height:1.2;
         background:url("../images/icon/icon_coupon.png") no-repeat center center;
+        background-size:cover;
         .tit {
           color:#000;
-          font-size:rem(12);
+          font-size:rem(10);
           font-weight:500;
         }
         .price {
-          margin-top:5px;
+          margin-top:3px;
           color:#ff6600;
-          font-size:rem(16);
+          font-size:rem(11);
           font-weight:700;
           strong {
-            font-size:rem(29);
+            font-size:rem(18);
             font-weight:900;
           }
         }
         .period {
-          margin-top:8px;
+          margin-top:4px;
           color:#585858;
-          font-size:rem(12);
+          font-size:rem(10);
+          letter-spacing: -1px;
           span {
             margin-left:5px;
           }
@@ -389,23 +394,22 @@
 
     // review
     .reivew-wrap {
-      padding:0 55px;
+      padding:0 22px;
       text-align:left;
-      .tit {
-        color:#000;
-        font-size:rem(21);
-        font-weight:700;
-        line-height:1.2;
-      }
+      // .tit {
+      //   color:#000;
+      //   font-size:rem(21);
+      //   font-weight:700;
+      //   line-height:1.2;
+      // }
       .text {
-        margin-top:20px;
         color:#000;
-        font-size:rem(15);
+        font-size:rem(10);
         line-height:1.6;
       }
       .photo-slide {
-        margin-top:30px;
-        padding-top:30px;
+        margin-top:20px;
+        padding:20px 0 58px;
         border-top:1px solid #e5e5e5;
         .slick-slide {
           text-align:center;
@@ -417,22 +421,23 @@
         }
         .slick-arrow {
           position:absolute;
-          top:0;
           bottom:0;
-          width:55px;
+          width:20%;
+          height:58px;
           background-color:transparent;
           border:none;
           background-repeat: no-repeat;
           background-position:center center;
+          background-size:12px auto;
           cursor: pointer;
           outline: none;
           @include fontNone;
           &.slick-prev {
-            left:-55px;
+            left:0;
             background-image:url("../images/icon/btn_arrow02_left.png");
           }
           &.slick-next {
-            right:-55px;
+            right:0;
             background-image:url("../images/icon/btn_arrow02_right.png");
           }
         }
@@ -441,33 +446,109 @@
 
     // 쿠폰조회 및 적용
     .coupon-list {
-      width:494px;
-      margin:0 auto;
+      padding:0 15px;
       h3 {
         text-align:left;
+      }
+      .coupon-list-info {
+        border-top:1px solid #7f7f7f;
+        li {
+          padding:13px 15px 13px 15px;
+          border-bottom:1px solid #e5e5e5;
+          text-align:left;
+          label {
+            display:block;
+            position:relative;
+            > span {
+              display:block;
+            }
+            .date {
+              position:absolute;
+              top:0;
+              right:0;
+              color:#787878;
+              font-size:rem(10);
+              font-weight:300;
+            }
+            .persent {
+              font-weight:700;
+              strong {
+                color:#ff5000;
+              }
+            }
+            .txt {
+              margin-top:5px;
+              color:#787878;
+              font-size:rem(10);
+              font-weight:300;
+            }
+          }
+        }
       }
     }
 
     // 결제완료
     .payment-wrap {
-      padding-top:100px;
+      padding-top:55px;
       background:url("../images/icon/icon_payment.png") no-repeat center 0;
+      background-size:29px auto;
+    }
+
+    // 종료된 클래스
+    .end-class {
+      .text-box {
+        display:flex;
+        flex-flow: column;
+        justify-content: space-between;
+        height:242px;
+        padding:57px 0 45px 0;
+        color:#1a1b1f;
+        line-height:1.2;
+        border:1px solid #cacaca;
+        text-align: center;
+        .tit {
+          font-size:rem(18);
+          font-weight:500;
+          strong {
+            color:#ff5a00;
+            font-weight:700;
+          }
+        }
+        .txt {
+          font-size:rem(13);
+        }
+      }
     }
 
 
     // size
-    &.layer-sm {
-      width:310px;
-      padding:30px 0;
-      border-radius: 24px;
+    &.layer-xsm {
+      top:10%;
+      bottom:auto;
+      width:80%;
+      margin:0 0 0 10%;
+      padding:30px 0 20px;
+      border-radius: 10px;
       .layer-contents {
-        width:255px;
         button[type='button'].button,
         a.button,
         input[type='submit'] {
-          height:46px;
-          line-height:44px;
+          height:30px;
+          line-height:28px;
         }
+      }
+    }
+    &.layer-sm {
+      top:10%;
+      bottom:auto;
+      width:90%;
+      margin:0 0 0 5%;
+      padding:40px 0 30px;
+      button[type='button'].button,
+      a.button,
+      input[type='submit'] {
+        height:30px;
+        line-height:28px;
       }
     }
     &.layer-lg {

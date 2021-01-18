@@ -209,11 +209,19 @@ function layerOpen(page, size){
   $(function(){
       
     if($('#wrap').hasClass('lecture')){
-      var watching = $('.watching');
-      var btnChat = $('.btn-chat');
+      var lectureTitle = $('.lecture-title');
+      var lectureTitleBtn = lectureTitle.find('> a');
+      var dim = $('<div class="dim-3"></div>');
 
-      btnChat.on('click', function(){
-        watching.toggleClass('with-chat');
+      lectureTitleBtn.on('click', function(){
+        lectureTitle.addClass('active');
+        $('#contents').before(dim);
+        return false;
+      });
+
+      $(document).on('click', '.dim-3', function(){
+        lectureTitle.removeClass('active');
+        $('.dim-3').remove();
         return false;
       });
     }

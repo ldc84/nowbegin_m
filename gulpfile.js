@@ -173,7 +173,7 @@
   /**************** zip task ****************/
   function buildZip() {
     return gulp.src('./build/**')
-      .pipe(zip('publish.zip'))
+      .pipe(zip('publish_m.zip'))
       .pipe(gulp.dest('./'))
   }
 

@@ -19,15 +19,7 @@
   <meta property="og:url" content="">
 
   <link rel="icon" type="image/png" href="../favicon.ico">
-  <link rel="stylesheet" href="../css/style.css?t=1610013340670">
-
-  <script>
-    // 로그인 체크 변수
-    var loginState = false;
-
-    // 알림 유무 변수
-    var alrim = true;
-  </script>
+  <link rel="stylesheet" href="../css/style.css?t=1610702011504">
 
 </head>
 
@@ -56,51 +48,36 @@
     <!-- //header -->
 
     <!-- gnb-menu -->
-    <aside class="gnb-menu">
-      <p class="logo"><img src="../images/common/logo.png" alt="NOW BEGIN"></p>
-      <!-- 로그인전 -->
-      <div class="top-login">
-        <a href="">로그인 하세요</a>
+    <aside class="gnb-menu mypage">
+      <a href="" class="back"><img src="../images/common/top_ico_back.png" alt="이전 화면으로 이동"></a>
+      <div class="user-name">
+        <p class="image">
+          <img src="../images/tmp/@tmp_121_121.png" alt="">
+        </p>
+        <p class="name">홍길동 님</p>
       </div>
-      <!-- 로그인시 -->
-      <ul class="top-utill" style="display:none;">
-        <li class="alert">
-          <a href="">
-            <img src="../images/common/top_ico_alert.png" alt="알림">
-            <span class="num">9+</span>
-          </a>
-        </li>
-        <li class="mypage">
-          <a href="">
-            <img src="../images/common/top_ico_mypage.png" alt="마이페이지">
-          </a>
-        </li>
-      </ul> 
       <nav id="gnb">
         <ul>
           <li>
-            <a href="">Dance</a>
+            <a href="">개인정보 수정</a>
           </li>
           <li>
-            <a href="">Fitness</a>
+            <a href="">수강 중의 강의</a>
           </li>
           <li>
-            <a href="">Pilates</a>
+            <a href="">내 쿠폰</a>
           </li>
           <li>
-            <a href="">Yoga</a>
+            <a href="">찜한강의</a>
           </li>
           <li>
-            <a href="">Zumba</a>
+            <a href="">결제 내역</a>
           </li>
           <li>
-            <a href="">Pole Dance</a>
+            <a href="">1:1문의</a>
           </li>
           <li>
-            <a href="">Meditation</a>
-          </li>
-          <li>
-            <a href="">Event</a>
+            <a href="">회원탈퇴</a>
           </li>
         </ul>
       </nav>
@@ -155,121 +132,95 @@
 <!-- start contents -->
 <div class="contents-box">
   
-  <h2 class="title-type-2">MYPAGE</h2>
+  <h2 class="title-type-2">내 쿠폰</h2>
 
-  <!-- mypage-wrap -->
-  <div class="mypage-wrap">
-    <!-- mypage-lnb -->
-    <div class="mypage-lnb">
-      <div class="user">
-        <div class="image"><img src="../images/tmp/@tmp_121_121.png" alt=""></div>
-        <p class="greeting">
-          <span>홍길동</span>님, 안녕하세요
-        </p>
-        <p class="date">
-          만료일
-          <strong>2020.08.10</strong>
-        </p>
-      </div>
-      <ul class="list">
-        <li>
-          <a href="./mypage_user_modify.html">개인정보 수정</a>
-        </li>
-        <li>
-          <a href="./mypage_lecture.html">수강 중인 강의</a>
-        </li>
-        <li>
-          <a href="./mypage_coupon.html" class="active">내 쿠폰</a>
-        </li>
-        <li>
-          <a href="./mypage_favorite.html">찜한 강의</a>
-        </li>
-        <li>
-          <a href="./mypage_payment.html">결제 내역</a>
-        </li>
-        <li>
-          <a href="./mypage_1vs1_list.html">1:1문의</a>
-        </li>
-        <li>
-          <a href="" class="btn-leave">회원탈퇴</a>
-        </li>
-      </ul>
-    </div>
-    <!-- //mypage-lnb -->
-
-    <!-- mypage-contents -->
-    <div class="mypage-contents">
-      <h3 class="title-type-3">내 쿠폰</h3>
-      <h4 class="mycoupon-title">
-        <span>사용가능한 쿠폰 <strong>4</strong>장</span>
-      </h4>
-      <ul class="mycoupon-list">
-        <li>
-          <div>
-            <p class="tit">DANCE 할인쿠폰</p>
-            <p class="price">
-              <strong>50,000</strong>원 할인
-            </p>
-            <p class="target">할인대상 : 전체</p>
-            <p class="date">2020.11.05 - 2021.11.05 까지</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <p class="tit">DANCE 할인쿠폰</p>
-            <p class="price">
-              <strong>50,000</strong>원 할인
-            </p>
-            <p class="target">할인대상 : 전체</p>
-            <p class="date">2020.11.05 - 2021.11.05 까지</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <p class="tit">DANCE 할인쿠폰</p>
-            <p class="price">
-              <strong>50,000</strong>원 할인
-            </p>
-            <p class="target">할인대상 : 전체</p>
-            <p class="date">2020.11.05 - 2021.11.05 까지</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <p class="tit">DANCE 할인쿠폰</p>
-            <p class="price">
-              <strong>50,000</strong>원 할인
-            </p>
-            <p class="target">할인대상 : 전체</p>
-            <p class="date">2020.11.05 - 2021.11.05 까지</p>
-          </div>
-        </li>
-        <li class="end">
-          <div>
-            <p class="tit">DANCE 할인쿠폰</p>
-            <p class="price">
-              <strong>50,000</strong>원 할인
-            </p>
-            <p class="target">할인대상 : 전체</p>
-            <p class="date">2020.11.05 - 2021.11.05 까지</p>
-          </div>
-        </li>
-        <li class="end">
-          <div>
-            <p class="tit">DANCE 할인쿠폰</p>
-            <p class="price">
-              <strong>50,000</strong>원 할인
-            </p>
-            <p class="target">할인대상 : 전체</p>
-            <p class="date">2020.11.05 - 2021.11.05 까지</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <!-- //mypage-contents -->
+  <!-- contents-inner -->
+  <div class="contents-inner">
+    
+    <h3 class="mycoupon-title">
+      <span>사용가능한 쿠폰 <strong>4</strong>장</span>
+    </h3>
+    <p class="text-type-3">
+      보유 중인 쿠폰은 ‘사용 대기’ 쿠폰만 노출됩니다.<br>
+      사용 완료, 기간 만료 쿠폰의 경우 PC에서 확인 가능합니다.
+    </p>
+    <ul class="mycoupon-list">
+      <li>
+        <div>
+          <p class="tit">DANCE 할인쿠폰</p>
+          <p class="price">
+            <strong>50,000</strong>원 할인
+          </p>
+          <p class="target-date">
+            <span class="target">할인대상 : 전체</span>
+            <span class="date">2020.11.05 - 2021.11.05 까지</span>
+          </p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class="tit">DANCE 할인쿠폰</p>
+          <p class="price">
+            <strong>50,000</strong>원 할인
+          </p>
+          <p class="target-date">
+            <span class="target">할인대상 : 전체</span>
+            <span class="date">2020.11.05 - 2021.11.05 까지</span>
+          </p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class="tit">DANCE 할인쿠폰</p>
+          <p class="price">
+            <strong>50,000</strong>원 할인
+          </p>
+          <p class="target-date">
+            <span class="target">할인대상 : 전체</span>
+            <span class="date">2020.11.05 - 2021.11.05 까지</span>
+          </p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class="tit">DANCE 할인쿠폰</p>
+          <p class="price">
+            <strong>50,000</strong>원 할인
+          </p>
+          <p class="target-date">
+            <span class="target">할인대상 : 전체</span>
+            <span class="date">2020.11.05 - 2021.11.05 까지</span>
+          </p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class="tit">DANCE 할인쿠폰</p>
+          <p class="price">
+            <strong>50,000</strong>원 할인
+          </p>
+          <p class="target-date">
+            <span class="target">할인대상 : 전체</span>
+            <span class="date">2020.11.05 - 2021.11.05 까지</span>
+          </p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class="tit">DANCE 할인쿠폰</p>
+          <p class="price">
+            <strong>50,000</strong>원 할인
+          </p>
+          <p class="target-date">
+            <span class="target">할인대상 : 전체</span>
+            <span class="date">2020.11.05 - 2021.11.05 까지</span>
+          </p>
+        </div>
+      </li>
+    </ul>
 
   </div>
-  <!-- //mypage-wrap -->
+  <!-- contents-inner -->
     
 
 </div>
@@ -324,7 +275,7 @@
   <!-- //wrap -->
 
   <!-- jquery cdn -->
-  <script src="../js/ui_js.js?t=1610013340670"></script>
+  <script src="../js/ui_js.js?t=1610702011504"></script>
 </body>
 
 </html>
