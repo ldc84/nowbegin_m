@@ -17,7 +17,8 @@ body {
   &.main {
     background-color:#1a1b1f;
     #header {
-      background-color:transparent;
+      background: url("../images/common/main_header_bg.png") repeat-x 0 0;
+      background-size:1px 50px;
     }
     #contents {
       padding-top:0;
@@ -25,7 +26,7 @@ body {
     }
     #footer {
       border-top:none;
-      background-color:#f0f0f0;
+      background-color:#1a1b1f;
     }
   }
 }

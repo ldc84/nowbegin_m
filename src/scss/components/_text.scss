@@ -81,3 +81,19 @@
     margin-bottom:15px;
   }
 }
+.text-type-5 {
+  padding:0 0 0 10px;
+  color:#161616;
+  font-size:rem(11);
+  line-height:1.2;
+}
+
+.text-dday-1 {
+  padding:8px 0 15px 10px;
+  color:#161616;
+  font-size:rem(10);
+  line-height:1.2;
+  strong {
+    color:$color-point;
+  }
+}

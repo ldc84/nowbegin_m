@@ -99,11 +99,22 @@
       line-height:1.3;
     }
   }
+  .top-logout {
+    border-top:1px solid #333438;
+    a {
+      display:block;
+      height:40px;
+      padding:12px 0 0 25px;
+      color:rgba(255,255,255,0.6);
+      font-size:rem(13);
+      line-height:1.3;
+    }
+  }
   .top-utill {
     display:flex;
     align-items: center;
     height:75px;
-    padding:28px 0 0 15px;
+    padding:28px 0 0 10px;
     li {
       margin-left:5px;
       @include fontNone;

@@ -19,7 +19,7 @@
   <meta property="og:url" content="">
 
   <link rel="icon" type="image/png" href="../favicon.ico">
-  <link rel="stylesheet" href="../css/style.css?t=1610702011521">
+  <link rel="stylesheet" href="../css/style.css?t=1612230481716">
 
 </head>
 
@@ -50,12 +50,12 @@
     <!-- gnb-menu -->
     <aside class="gnb-menu mypage">
       <a href="" class="back"><img src="../images/common/top_ico_back.png" alt="이전 화면으로 이동"></a>
-      <div class="user-name">
+      <!-- <div class="user-name">
         <p class="image">
           <img src="../images/tmp/@tmp_121_121.png" alt="">
         </p>
         <p class="name">홍길동 님</p>
-      </div>
+      </div> -->
       <nav id="gnb">
         <ul>
           <li>
@@ -139,8 +139,18 @@
     <form action="">
       <div class="user-modify-write">
         <div>
+          <div class="form-input-group type-2">
+            <div class="form-input size-sm">
+              <input type="text" placeholder="닉네임" value="NOWBEGIN">
+            </div>
+            <div>
+              <button type="button" class="button block small-3 color-2">중복확인</button>
+            </div>
+          </div>
+        </div>
+        <div>
           <div class="form-input size-sm">
-            <input type="text" value="NOWBEGIN" readonly>
+            <input type="email" value="urchoco@naver.com" readonly>
           </div>
         </div>
         <div>
@@ -164,15 +174,24 @@
         <div>
           <div class="form-input-group type-2">
             <div class="form-input size-sm">
-              <input type="tel" placeholder="휴대폰번호">
+              <input type="tel" placeholder="휴대폰번호" value="01012345678" readonly>
             </div>
             <div>
-              <button type="button" class="button block small-3 color-2">번호인증</button><!-- 번호인증시 .. '재전송' 으로 택스트 변경 -->
+              <button type="button" class="button block small-3 color-2">번호변경</button>
             </div>
           </div>
         </div>
         <div>
-          <p class="text-none"></p>
+          <div class="form-input-group type-2">
+            <div class="form-input size-sm">
+              <input type="tel" placeholder="휴대폰번호">
+            </div>
+            <div>
+              <button type="button" class="button block small-3 color-2">인증번호 받기</button>
+            </div>
+          </div>
+        </div>
+        <div>
           <div class="form-input-group type-2">
             <div class="form-input size-sm">
               <input type="number" placeholder="인증번호를 입력해주세요">
@@ -180,11 +199,6 @@
             <div>
               <button type="button" class="button block small-3 color-2">확인</button>
             </div>
-          </div>
-        </div>
-        <div class="email">
-          <div class="form-input size-sm">
-            <input type="email" placeholder="이메일을 입력해주세요">
           </div>
         </div>
       </div>
@@ -208,6 +222,9 @@
     <footer id="footer">
       <h2 class="invisible">하단 영역</h2>
       <ul class="foot-sns">
+        <li>
+          <a href=""><img src="../images/common/foot_sns_youtube.png" alt="youtube"></a>
+        </li>
         <li>
           <a href=""><img src="../images/common/foot_sns_facebook.png" alt="facebook"></a>
         </li>
@@ -250,7 +267,7 @@
   <!-- //wrap -->
 
   <!-- jquery cdn -->
-  <script src="../js/ui_js.js?t=1610702011521"></script>
+  <script src="../js/ui_js.js?t=1612230481716"></script>
 </body>
 
 </html>

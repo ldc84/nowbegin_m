@@ -430,14 +430,18 @@
     a {
       position:relative;
       display:block;
-      padding:10px 0 11px 0;
+      padding:10px 0 11px 10px;
       color:#161616;
       .section-date {
         font-size:rem(10);
         .section {
           font-weight:500;
         }
+        .hit {
+          color:#a3a3a3;
+        }
         .date {
+          margin-left:12px;
           color:#a3a3a3;
         }
       }

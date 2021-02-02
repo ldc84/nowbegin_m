@@ -178,6 +178,8 @@ function layerOpen(page, size){
         arrows: false,
         dots: true,
         appendDots: $('.dots-box'),
+        autoplay:true,
+        autoplaySpeed:3000,
       });
       
       // live list
