@@ -380,6 +380,7 @@
             }
           }
           .time {
+            min-width:80px;
             margin-top:-2px;
             color:#fff;
             font-size:rem(10);
@@ -484,6 +485,7 @@
           }
         }
         .date-hit {
+          flex:1;
           margin-left:15px;
           color:#000;
           font-size:rem(10);
